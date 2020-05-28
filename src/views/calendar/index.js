@@ -3,6 +3,8 @@
  * 2.获取该年月中当月对应的总的天数
  * 3.获取该年月最后一天对应的星期几
  * 4.将第一天之前空缺连接中间天数连接最后一天的天数
+ * （1）获得的月份是从当月对应的相加
+ * （2）获得的星期是星期一到星期日 对应的是1到0
  */
 
 import React, { Component } from 'react'
@@ -13,7 +15,7 @@ export default class PageIndex extends Component {
     super(props)
     this.state = {
       year: new Date().getFullYear(),
-      month: new Date().getMonth(), //对应的5月,
+      month: new Date().getMonth(), //获得的月份是当前月份减1
       newDatas: [],
       yearList: [],
       showYear: false,
@@ -32,7 +34,7 @@ export default class PageIndex extends Component {
       yearList.unshift(i)
     }
 
-    for (let jj = year + 1; jj < year + 20; jj++) {
+    for (let j = year + 1; j < year + 20; j++) {
       yearList.push(jj)
     }
     this.setState({
