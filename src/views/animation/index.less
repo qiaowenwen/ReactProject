@@ -1,0 +1,31 @@
+.animation-wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .animation-list {
+    height: 180px;
+    width: 180px;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000;
+    opacity: 0.2;
+
+
+    .iconfont {
+      color: #fff;
+      font-size: 50px;
+      animation: loading 1s infinite linear; // 名称 时间 动画播放的次数  以什么样式速度去播放动画
+    }
+  }
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(360deg)
+  }
+}

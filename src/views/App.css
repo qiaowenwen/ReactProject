@@ -1,0 +1,19 @@
+@import '../assets/styles/index.less';
+
+.body-wrap {
+  height: 100%;
+}
+
+.list-wrap {
+  height: 100%;
+}
+
+.list-wrap-item {
+  height: 60px;
+  font-size: 30px;
+  line-height: 60px;
+  background: #d69090;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 2px;
+}
