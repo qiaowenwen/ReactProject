@@ -35,7 +35,7 @@ export default class PageIndex extends Component {
     }
 
     for (let j = year + 1; j < year + 20; j++) {
-      yearList.push(jj)
+      yearList.push(j)
     }
     this.setState({
       yearList

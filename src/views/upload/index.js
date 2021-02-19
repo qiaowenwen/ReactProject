@@ -4,13 +4,11 @@ export default class PageIndex extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      url: '',
-      loading: false
+      count: 0
     }
   }
 
   onFileChange = () => {
-
     // const fileSelectorEl = this.fileSelectorInput
     // const files = fileSelectorEl.files
     // this.setState({
@@ -23,31 +21,39 @@ export default class PageIndex extends Component {
     })
   }
 
+  componentDidMount() {}
+  increa = () => {
+    console.log(this.state.count)
+    this
+  }
+
+
+
   render() {
     const { url, loading } = this.state
     return (
-      <div className='upload-wrap'>
-        {loading && <div className="loading-wrap"><div className='loading-center'><i className='iconfont icon-loading1' />
-        </div></div>}
-        <div className='upload-wrap-button'>
+      <div className="upload-wrap">
+        {loading && (
+          <div className="loading-wrap">
+            <div className="loading-center">
+              <i className="iconfont icon-loading1" />
+            </div>
+          </div>
+        )}
+        <div className="upload-wrap-button">
           <div className="button">
-            <span>
-              图片的上传
-            </span>
+            <span>图片的上传</span>
           </div>
           <input
-            style={{
-
-            }}
-            className='upload-input'
-            ref={
-              input => {
-                if (input) {
-                  this.fileSelectorInput = input
-                }
+            style={{}}
+            className="upload-input"
+            ref={input => {
+              if (input) {
+                this.fileSelectorInput = input
               }
-            }
-            type="file" accept={'.png,.jpg'}
+            }}
+            type="file"
+            accept={'.png,.jpg'}
             onChange={this.onFileChange}
             onClick={this.loading}
           />
@@ -55,21 +61,11 @@ export default class PageIndex extends Component {
         </div>
 
         <div className="flex-text">
-          <div>
-            1212
-             </div>
-          <div>
-            1212
-             </div>
-          <div>
-            1212
-             </div>
-          <div>
-            1212
-             </div>
-          <div>
-            1212
-             </div>
+          <div>1212</div>
+          <div>1212</div>
+          <div>1212</div>
+          <div>1212</div>
+          <div>1212</div>
         </div>
       </div>
     )

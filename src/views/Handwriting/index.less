@@ -1,0 +1,219 @@
+// @import '../../assets/styles/index.less';
+.assignWrap {
+  width: 100%;
+  font-size: 36px;
+  height: 100%;
+  padding-bottom: 525px;
+  box-sizing: border-box;
+  background-color: #fff;
+
+  .assign-tiptop {
+    margin-bottom: 35px;
+    font-size: 32px;
+    color: #333;
+  }
+
+  .assign-name {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    color: #333;
+  }
+
+  b,
+  strong {
+    font-weight: bold;
+  }
+
+  &.with-bottom-button {
+    padding-bottom: 625px;
+  }
+
+  .assignContent {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    -webkit-overflow-scrolling: touch;
+    font-size: 28px;
+    font-size: #666;
+  }
+
+  .assignWrite {
+    left: 0;
+    position: absolute;
+    padding: 20px 30px 20px;
+    box-sizing: border-box;
+    bottom: 0;
+    width: 100%;
+    background-color: #f7f8fa;
+    z-index: 99;
+
+    .assign-tips {
+      font-size: 24px;
+      color: #e1a35e;
+    }
+
+    .sign_box {
+      height: 360px;
+      display: flex;
+      box-sizing: border-box;
+      padding-bottom: 10px;
+    }
+
+    .sign_box .sign_area {
+      background: #fff;
+      flex: 1;
+      position: relative;
+
+      .imgVisible {
+        position: absolute;
+        top: 0px;
+        width: 690px;
+        height: 350px;
+      }
+    }
+
+    .sign_box .sign_area canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+    .sign_box .sign_area .sign_txt {
+      display: inline-block;
+      width: 324px;
+      position: absolute;
+      color: #999;
+      text-align: center;
+      left: 50%;
+      top: 50%;
+      margin-left: -162px;
+      font-size: 36px;
+    }
+
+    .sign_area {
+      .pf-button-normal {
+        background-color: #fff;
+      }
+    }
+
+    .sign_clear {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+    }
+
+    .sign_sure_active {
+      position: absolute;
+      color: #e1a35e;
+      right: 130px;
+      bottom: 10px;
+      border-color: #e1a35e;
+    }
+
+    .sign_sure {
+      position: absolute;
+      color: #999;
+      right: 130px;
+      bottom: 10px;
+      border-color: #999;
+    }
+  }
+}
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  background: #fff;
+
+  .left-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left-1 {
+    width: 260px;
+    transform: rotate(90deg);
+    height: 88px;
+    line-height: 88px;
+    border-radius: 44px;
+    border: 1px solid #EA5504;
+    margin-top: 400px;
+    text-align: center;
+
+    &.left-2 {
+      margin-top: 260px;
+      background: #FCEEE5;
+    }
+
+
+
+    .leftText-1 {
+      font-size: 32px;
+      color: #EA5504;
+    }
+
+
+  }
+
+  .leftText-3 {
+    font-size: 26px;
+    color: #EA5504;
+    transform: rotate(90deg);
+    margin-top: 230px;
+
+  }
+
+  .center {
+    flex: 1;
+    background: #fffcfb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px dashed #EA5504;
+    border-radius: 4px;
+    border-radius: 4px;
+    margin: 112px 0;
+
+
+
+    .centerConten {
+      transform: rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg);
+      position: absolute;
+      font-size: 32px;
+      color: #BFBFBF;
+    }
+
+    canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+  .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // transform: rotate(90deg);
+    font-size: 30px;
+    color: #333333;
+
+    .rightText {
+      transform: rotate(90deg);
+
+
+    }
+  }
+
+}
